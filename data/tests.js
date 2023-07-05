@@ -8001,4 +8001,4 @@ const tests = [
   },
 ];
 
-exports.data = data;
+exports.data = tests;

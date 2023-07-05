@@ -14234,4 +14234,4 @@ const test_answers = [
   },
 ];
 
-export default test_answers;
+exports.data = test_answers;

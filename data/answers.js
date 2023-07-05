@@ -4001,4 +4001,4 @@ const answers = [
   },
 ];
 
-export default answers;
+exports.data = answers;

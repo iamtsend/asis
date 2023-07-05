@@ -145,4 +145,4 @@ topics = [
   },
 ];
 
-export default topics;
+exports.data = topics;
