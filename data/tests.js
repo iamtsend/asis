@@ -8001,5 +8001,4 @@ const tests = [
   },
 ];
 
-export default tests;
-
+exports.data = data;
