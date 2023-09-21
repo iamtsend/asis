@@ -1,0 +1,27 @@
+extends layout.pug 
+
+block scripts
+  script(src="/scripts/topic.js") 
+
+block content 
+  div.topic-container
+    div.topic-title=`Сэдэв: ${topic.topics_name}`
+    div.topic-tests
+      each test, index in tests 
+        div.test
+          div.question= `${index + 1}. ${test.questions}`
+          if test.images
+            img(
+              src=test.images
+              title=test.questions
+              alt=test.questions
+            )
+          div.answers
+            each answer in test.answers 
+              if test.answer_id === answer.id 
+                div.answer.correct= answer.answer
+              else
+                div.answer= answer.answer
+            if test.desc
+              div.description= test.desc
+    a.back(href="/") Буцах

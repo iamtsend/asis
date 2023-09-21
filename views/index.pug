@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+  div.topics
+    each topic in topics
+      a.topic(href=`/topics/${topic.id}`) 
+        div 
+          div.number= `Сэдэв №${topic.id}`
+          div.title= topic.topics_name 
+        div.count= topic.question_number + ' асуулт'
+
