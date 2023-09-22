@@ -35,6 +35,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.back-circle:hover {
+  border-color: #2d68ff;
+}
 .topics {
   display: flex;
   flex-wrap: wrap;
@@ -55,7 +58,6 @@ body {
 }
 .topic:hover {
   border-color: #2d68ff;
-  /* color: #2d68ff; */
 }
 .topic .number {
   font-size: 0.75rem;
@@ -115,19 +117,22 @@ body {
   max-height: 160px;
   max-width: 100%;
 }
-.back {
+.back-button {
   display: block;
   margin-top: 1rem;
   text-decoration: none;
   padding: 0.75rem;
   width: 100%;
   text-align: center;
-  background-color: #2d68ff;
-  color: #ffffff;
+  color: #222222;
   font-weight: 600;
   font-size: 0.875rem;
+  border: 2px solid #dddddd;
   border-radius: 1rem;
   margin-top: 2rem;
+}
+.back-button:hover {
+  border-color: #2d68ff;
 }
 .divider {
   border: 1px solid #dddddd;
