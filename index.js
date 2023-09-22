@@ -8,7 +8,7 @@ const answers = require("./data/answers");
 const test_answers = require("./data/test_answers");
 
 const app = express();
-const port = process.env.PORT || 1313;
+const port = process.env.PORT || 3333;
 app.set("view engine", "pug");
 app.use(express.static(__dirname + "/public"));
 

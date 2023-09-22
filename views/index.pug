@@ -1,6 +1,13 @@
 extends layout.pug
 
 block content
+  div.page-title-container.mb-2rem
+    div 
+      a.back-circle(href="/")
+        img(src="/images/arrow-back.png", alt="Back")
+    div 
+      h2.page-title Сэдвийн тест
+      div.page-description Нийт 800 асуултыг сэдэв бүрээр нь ангилж бэлдсэн онлайн тест
   div.topics
     each topic in topics
       a.topic(href=`/topics/${topic.id}`) 

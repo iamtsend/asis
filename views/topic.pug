@@ -5,7 +5,14 @@ block scripts
 
 block content 
   div.topic-container
-    div.topic-title=`Сэдэв: ${topic.topics_name}`
+    div.page-title-container.mb-1p5rem
+      div 
+        a.back-circle(href="/")
+          img(src="/images/arrow-back.png", alt="Back")
+      div 
+        div.page-description= `Сэдэв №${topic.id}`
+        h2.page-title= topic.topics_name
+    div.divider
     div.topic-tests
       each test, index in tests 
         div.test
@@ -23,5 +30,7 @@ block content
               else
                 div.answer= answer.answer
             if test.desc
-              div.description= test.desc
+              div.description
+                img(src="/images/help.png", alt="Help")
+                div= test.desc
     a.back(href="/") Буцах
